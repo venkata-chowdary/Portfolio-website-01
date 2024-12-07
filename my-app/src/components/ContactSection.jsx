@@ -29,13 +29,23 @@ export function ContactSection() {
             subject: formData.subject
         }
 
-        emailjs.send("service_4fxc1hp", "template_3b2pyxk", data, "vuUUs1MVEnoGao84v")
+        emailjs.send(
+            process.env.NEXT_PUBLIC_SERVICE,
+            process.env.NEXT_PUBLIC_TEMPLATE,
+            data,
+            process.env.NEXT_PUBLIC_PUBLIC
+        )
             .then((response) => {
                 console.log(response)
                 if (response.status === 200) {
                     setSuccess(true)
                 }
                 setSending(false)
+                setFormData({
+                    email: "",
+                    message: "",
+                    subject: ""
+                })
             })
             .catch((err) => {
                 setSuccess(false)
@@ -51,10 +61,10 @@ export function ContactSection() {
 
 
             <form className="md:w-2/3 p-6 space-y-3 lg:space-y-4 bg-neutral-800 rounded-xl mt-6">
-
                 <input
                     name="email"
                     type="email"
+                    value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email"
                     className="w-full px-4 py-2 rounded-2xl bg-neutral-900 text-gray-300 border-none focus:outline-none focus:ring-1 focus:ring-[#de1d8d] focus:border-[#de1d8d] transition"
@@ -62,12 +72,14 @@ export function ContactSection() {
 
                 <input type="text" name="subject"
                     placeholder="Subject"
+                    value={formData.subject}
                     onChange={handleChange}
                     className="w-full px-4 py-2 rounded-2xl bg-neutral-900 text-gray-300 border-none focus:outline-none focus:ring-1  focus:ring-[#de1d8d] focus:border-[#de1d8d] transition"
 
                 />
 
                 <textarea
+                    value={formData.message}
                     name="message"
                     onChange={handleChange}
                     className="w-full px-4 py-2 bg-neutral-900 rounded-2xl text-gray-300 border-none focus:outline-none focus:ring-1  focus:ring-[#de1d8d] focus:border-[#de1d8d] transition"
@@ -83,8 +95,6 @@ export function ContactSection() {
                     </p>
                 )}
             </form>
-
-
         </div>
     );
 }
