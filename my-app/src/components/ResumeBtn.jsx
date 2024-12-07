@@ -5,12 +5,13 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 export function ResumeBtn() {
   return (
     (<div className="flex justify-center text-center">
-      <HoverBorderGradient
+      <a href="https://drive.google.com/file/d/1aILb6MUxmOC097uVNyrPL9_atQpvqM-8/view?usp=drive_link"><HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
         className="font-medium text-md lg:text-xl dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
         <span>Check Resume</span>
-      </HoverBorderGradient>
+      </HoverBorderGradient></a>
+
     </div>)
   );
 }

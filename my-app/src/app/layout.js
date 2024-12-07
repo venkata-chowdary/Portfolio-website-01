@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={mukta.className}>
       <NavBar/>
         {children}
-        {/* <FloatingNavBar/> */}
+        <FloatingNavBar/>
       </body>
     </html>
   );
