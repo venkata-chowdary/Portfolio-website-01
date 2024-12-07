@@ -38,7 +38,7 @@ export function ProjectSection() {
     return (
         <div className="lg:max-w-6xl mx-auto px-6 py-4 mb-6 mt-12 lg:my-24">
             <SectionTitle sectionName="Projects" customClassName="lg:text-3xl text-xl" />
-            <p className="mt-3 lg:text-lg font-medium  text-gray-300">I've worked on a variety of projects, from simple websites to complex web applications. <br></br> Here are a few of my favorites.</p>
+            <p className="mt-3 lg:text-lg font-medium  text-gray-300">I&apos;ve worked on a variety of projects, from simple websites to complex web applications. <br></br> Here are a few of my favorites.</p>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-2">
                 {projectsData.map((project, ind) => {
                     return <ProjectCard project={project} key={ind} />
