@@ -8,7 +8,6 @@ import {
     IconMail,
     IconBrandLeetcode,
 } from "@tabler/icons-react";
-import Image from "next/image";
 
 export function FloatingNavBar() {
     const links = [
@@ -53,7 +52,7 @@ export function FloatingNavBar() {
 
     ];
     return (
-        (<div className="flex items-center justify-center w-full fixed bottom-12 lg:bottom-8">
+        (<div className="flex items-center justify-center w-full fixed bottom-12 lg:bottom-8 z-50">
             <FloatingDock items={links} />
         </div>)
     );

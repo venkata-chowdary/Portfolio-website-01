@@ -1,3 +1,4 @@
+import { SectionTitle } from '@/components/SectionTitle'
 import Image from 'next/image'
 
 export default function About() {
@@ -21,10 +22,11 @@ export default function About() {
                 <p className='text-lg lg:text-xl font-light leading-relaxed text-justify'>Hello, I’m Venkata Chowdary, a passionate Software Developer with extensive experience in building full-stack applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). I specialize in designing user-centric interfaces, building responsive web applications, and delivering seamless user experiences with modern technologies. With a strong foundation in both front-end and back-end development, I am committed to crafting scalable, secure, and efficient solutions. Currently in my final year of B.Tech in Information Technology, I strive to innovate and create impactful software solutions that address real-world challenges.</p>
             </div>
             <div className='mt-8 text-left flex flex-col space-y-3'>
-                <div className='w-fit'>
+                {/* <div className='w-fit'>
                     <h1 className='text-xl font-bold'>Achievements</h1>
                     <div className=" w-full mx-auto h-1 bg-[#de1d8d]"></div>
-                </div>
+                </div> */}
+                <SectionTitle sectionName={'Achivements'} customClassName='text-xl'/>
                 <ul className='list-disc pl-8 text-justify'>
                     <li>Won First Prize in a poster design competition for Stepcone, demonstrating creativity.</li>
                     <li>Secured First Place in a frontend development competition, showcasing technical skills.</li>
