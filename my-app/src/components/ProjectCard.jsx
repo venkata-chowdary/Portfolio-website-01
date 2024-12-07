@@ -8,7 +8,6 @@ import { Skill } from "./Skill";
 import { IconBrandGithub, IconLink } from "@tabler/icons-react";
 
 export function ProjectCard({ project }) {
-    console.log(project)
 
     return (
         (<CardContainer className="inter-var">
@@ -22,6 +21,7 @@ export function ProjectCard({ project }) {
                         alt="thumbnail"
                     />
                 </CardItem>
+
 
                 <CardItem translateZ="50" className="w-full mt-4 text-xl font-bold text-neutral-600 dark:text-white">
                     {project.title}

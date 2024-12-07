@@ -45,7 +45,7 @@ export function ContactSection() {
 
     }
     return (
-        <div id="contact" className="lg:max-w-6xl mx-auto px-6 py-4 mt-4 lg:mb-36">
+        <div id="contact" className="lg:max-w-6xl mx-auto px-6 py-4 mb-28">
             <SectionTitle sectionName={"Get in Touch"} customClassName='lg:text-3xl text-xl' />
             <p className="mt-3 lg:text-lg font-medium  text-gray-300">I’d love to hear from you! Reach out for collaborations or just a chat.</p>
 

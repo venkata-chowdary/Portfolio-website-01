@@ -7,13 +7,12 @@ import { SkillsSecion } from "@/components/SkillsSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <HeroSection />
       <SkillsSecion/>
       <ExperienceSection/>
       <ProjectSection/>
       <ContactSection/>
     </div>
-
   );
 }
