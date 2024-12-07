@@ -34,7 +34,6 @@ export function ProjectCard({ project }) {
                     {project.technologies.map((skill, ind) => {
                         return <Skill key={ind} skill={skill} />
                     })}
-
                 </CardItem>
                 <CardItem translateZ="50" className="flex justify-start items-center gap-4 w-full lg:mt-4 mt-3">
                     <Link href={project.liveLink} target="_blank" className="flex items-center text-blue-500 hover:text-blue-700 transition-colors duration-300">
@@ -55,7 +54,6 @@ export function ProjectCard({ project }) {
                         />
                         <span className="text-sm font-medium">GitHub</span>
                     </Link>
-
                 </CardItem>
             </CardBody>
         </CardContainer>)
