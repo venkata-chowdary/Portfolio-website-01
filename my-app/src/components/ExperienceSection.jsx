@@ -9,6 +9,5 @@ export function ExperienceSection() {
                 <ExpTimeLine/>
             </div>
         </div>
-
     )
 }

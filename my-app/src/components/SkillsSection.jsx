@@ -17,24 +17,24 @@ export function SkillsSecion() {
 
 
 export const skills = [
-    {
-        title: "HTML",
-        imageUrl: "/logos/html.png"
-    },
-    {
-        title: "CSS",
-        imageUrl: "/logos/css.png"
-    },
+    // {
+    //     title: "HTML",
+    //     imageUrl: "/logos/html.png"
+    // },
+    // {
+    //     title: "CSS",
+    //     imageUrl: "/logos/css.png"
+    // },
     {
         title: "JavaScript",
         imageUrl: "/logos/js.png"
     },
     {
-        title: "React",
+        title: "ReactJS",
         imageUrl: "/logos/react.png"
     },
     {
-        title: "Node.js",
+        title: "NodeJs",
         imageUrl: "/logos/node.png"
     },
     {
@@ -42,7 +42,7 @@ export const skills = [
         imageUrl: "/logos/mongodb.png"
     },
     {
-        title: "Express",
+        title: "ExpressJS",
         imageUrl: "/logos/express.png"
     },
     {
@@ -52,5 +52,28 @@ export const skills = [
         title: "Firebase",
         imageUrl: "/logos/firebase.png"
     },
+    {
+        title: "NextJS",
+        imageUrl: "/logos/nextjs.png"
+    }, {
+        title: "Appwrite",
+        imageUrl: "/logos/appwrite.png"
+    }, {
+        title: "Prisma",
+        imageUrl: "/logos/prisma.png"
+    },
+    {
+        title: "PostgreSQL",
+        imageUrl: "/logos/postgresql.png"
+    },
+    {
+        title: "Git",
+        imageUrl: "/logos/git.png"
+    },
+    {
+        title: "SQL",
+        imageUrl: "/logos/mysql.png"
+    }
+
 ];
 

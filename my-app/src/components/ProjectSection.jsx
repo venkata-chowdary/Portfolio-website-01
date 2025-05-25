@@ -25,6 +25,22 @@ export function ProjectSection() {
             repoLink: "https://github.com/venkata-chowdary/Task-Manager/tree/master",
         },
         {
+            title: "Trackly - Job Application Manager",
+            description: "Trackly is a job application management platform built with Next.js, Prisma, Clerk, and Gmail API. It automates fetching and classifying job-related emails using AI, helping users track application statuses, job details, and deadlines all in one place. Features include email integration, AI-powered job detection, status updates, and an intuitive dashboard for seamless job search management.",
+            technologies: ["Next.js", "Prisma", "Clerk", "Gmail API", "Instamojo","Gemini AI"],
+            image: "/projects/ss3.png",
+            liveLink: "https://trackly-alpha.vercel.app/",
+            repoLink: "https://github.com/venkata-chowdary/trackly",
+        },
+        {
+            title: "DoubtDesk - College Doubt Solving Platform",
+            description: "DoubtDesk is a community platform for college students to post and solve doubts across various subjects. Inspired by Stack Overflow, it rewards users with badges and points for accepted answers, encouraging collaborative learning. The clean, Notion-style UI built with Next.js and ShadCN UI ensures a smooth, distraction-free experience while fostering knowledge sharing.",
+            technologies: ["Next.js", "ShadCN UI", "Appwrite", "Vercel"],
+            image: "/projects/ss4.png",
+            liveLink: "https://doubt-desk.vercel.app/",
+            repoLink: "https://github.com/venkata-chowdary/DoubtDesk",
+        },
+        {
             title: "E-Commerce Platform",
             description: "This e-commerce platform is developed with Node.js, MongoDB, and EJS templates. It supports product browsing, cart management, and secure order placement. Features include user authentication, real-time inventory updates, payment gateway integration, and dynamic search functionality. Designed for efficiency, it ensures seamless shopping experiences.",
             technologies: ["EJS", "ExpressJS", "NodeJS", "MongoDB", "Bootstrap"],
