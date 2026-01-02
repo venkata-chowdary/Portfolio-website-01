@@ -10,39 +10,103 @@ export function ExpTimeLine() {
             content: (
                 <div className="flex flex-col space-y-2 lg:space-y-3">
                     <div>
-                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">Full Stack Intern</h2>
-                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">TopNotch Software Solutions, <span>Visakhapatnam</span></h3>
+                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">
+                            Full Stack Intern
+                        </h2>
+                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">
+                            TopNotch Software Solutions,{" "}
+                            <span>Visakhapatnam</span>
+                        </h3>
                     </div>
-                    <p className="text-sm lg:text-base text-gray-300 ">During my internship at Top Notch Software Solutions, I developed a Library Management System using HTML, CSS, Django, and SQL. I focused on creating an intuitive user interface and efficient database interactions for seamless library operations. This experience enhanced my skills in full-stack development and collaborative problem-solving.</p>
+                    <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
+                        <li>Developed a Library Management System using HTML, CSS, Django, and SQL.</li>
+                        <li>Focused on creating an intuitive user interface and efficient database interactions for seamless library operations.</li>
+                        <li>Enhanced skills in full-stack development and collaborative problem-solving.</li>
+                    </ul>
                     <div className="flex flex-wrap mt-1">
-                        {["HTML", "CSS", "Javascript", "Django", "SQL"].map((tech) => (
+                        {["HTML", "CSS", "Javascript", "Django", "SQL"].map(
+                            (tech) => (
+                                <Skill key={tech} skill={tech} />
+                            )
+                        )}
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "November 2024 - December 2024",
+            content: (
+                <div className="flex flex-col space-y-2 lg:space-y-3">
+                    <div>
+                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">
+                            Software Developer Intern
+                        </h2>
+                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">
+                            Revidd, <span>Visakhapatnam</span>
+                        </h3>
+                    </div>
+                    <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
+                        <li>Worked closely with the CTO to build the foundational architecture of a modern SaaS platform from scratch.</li>
+                        <li>Developed full-stack features using React.js, Node.js, and MongoDB, ensuring seamless integration and robust performance.</li>
+                        <li>Integrated and consumed RESTful APIs to enable smooth data flow across frontend and backend services.</li>
+                        <li>Collaborated with the UI/UX team to build intuitive, user-friendly interfaces and deliver polished product experiences.</li>
+                        <li>Handled version control and deployment workflows using Git, managing pull requests, merges, and production deployments.</li>
+                    </ul>
+                    <div className="flex flex-wrap mt-1">
+                        {[
+                            "ReactJS",
+                            "NodeJs",
+                            "ExpressJS",
+                            "Flowise",
+                            "MongoDB",
+                            "GitLab",
+                        ].map((tech) => (
                             <Skill key={tech} skill={tech} />
                         ))}
                     </div>
                 </div>
             ),
-        }, {
-            title: "December 2024 - April 2025",
+        },
+        {
+            title: "December 2024 - December 2025",
             content: (
                 <div className="flex flex-col space-y-2 lg:space-y-3">
                     <div>
-                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">Software Developer Intern</h2>
-                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">Revidd, <span>Visakhapatnam</span></h3>
+                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">
+                            Software Engineer
+                        </h2>
+                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">
+                            Inagent, <span>Visakhapatnam</span>
+                        </h3>
                     </div>
-                    <p className="text-sm lg:text-base text-gray-300 ">Worked closely with the CTO to build an AI-powered SaaS product from the ground up. Contributed to both frontend and backend development using React, Node.js, and Express. Integrated Generative AI workflows with Flowise, participated in product discussions, conducted code reviews, and handled deployments using Rancher. The tool was successfully adopted internally for marketing operations.</p>
+                    <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
+                        <li>Core member of the development team, contributing to technical decisions and delivering full-stack features.</li>
+                        <li>Helped take the product from inception to its first 5 sales, shaping early adoption and product strategy.</li>
+                        <li>Developed end-to-end full-stack SaaS features using React.js, Next.js, Node.js, Express.js, and Python.</li>
+                        <li>Built and integrated <strong>agentic AI workflows</strong> and GenAI tools using LangChain, LangGraph, and <strong>MCP servers</strong>.</li>
+                        <li>Managed CI/CD pipelines and production deployments using GitLab CI/CD, Docker, and Rancher.</li>
+                    </ul>
                     <div className="flex flex-wrap mt-1">
-                        {["ReactJS", "NodeJs", "ExpressJS", "Flowise", "MongoDB", "GitLab"].map((tech) => (
+                        {[
+                            "React.js",
+                            "Next.js",
+                            "Node.js",
+                            "Python",
+                            "LangChain",
+                            "LangGraph",
+                            "Docker",
+                            "GitLab CI/CD",
+                        ].map((tech) => (
                             <Skill key={tech} skill={tech} />
                         ))}
                     </div>
                 </div>
-            )
-        }
-
+            ),
+        },
     ];
     return (
-        (<div className="w-full">
+        <div className="w-full">
             <Timeline data={data} />
-        </div>)
+        </div>
     );
 }
