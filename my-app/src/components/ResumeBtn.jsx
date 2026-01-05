@@ -6,7 +6,7 @@ import Link from "next/link";
 export function ResumeBtn() {
   return (
     (<div className="flex justify-center text-center">
-      <Link href="https://docs.google.com/document/d/1Fnob22YSkEgCsPaueQIu4b42BumkGqze9WDEyHqGhVc/edit?usp=sharing"><HoverBorderGradient
+      <Link href="https://docs.google.com/document/d/1Gmj2IU4bOdPhWuZPNEKS_mD0WbXHGoB2vkZTaVZkZwg/edit?usp=sharing"><HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
         className="font-medium text-md lg:text-xl dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">

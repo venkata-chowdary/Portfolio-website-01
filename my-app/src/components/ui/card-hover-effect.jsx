@@ -39,12 +39,14 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card className="flex justify-center items-center text-center z-0">
-                        <div className="w-16 h-16 lg:w-24 lg:h-24 relative lg:my-4">
-                            <Image src={item.imageUrl}
-                                alt="Venkata Chowdary Immanni"
-                                objectFit="auto"
-                                layout='fill'
-                            />
+                        <div className="w-10 h-10 lg:w-16 lg:h-16 relative lg:my-4">
+                            {item.imageUrl && (
+                                <Image src={item.imageUrl}
+                                    alt={item.title}
+                                    fill
+                                    style={{ objectFit: "contain" }}
+                                />
+                            )}
                         </div>
                         <CardTitle className='text-sm lg:text-base'>{item.title}</CardTitle>
                     </Card>

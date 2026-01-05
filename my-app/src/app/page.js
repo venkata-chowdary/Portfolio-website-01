@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div className="bg-black">
       <HeroSection />
-      <SkillsSecion/>
-      <ExperienceSection/>
-      <ProjectSection/>
-      <ContactSection/>
+      <SkillsSecion />
+      <ExperienceSection />
+      <ProjectSection />
+      <ContactSection />
     </div>
   );
 }

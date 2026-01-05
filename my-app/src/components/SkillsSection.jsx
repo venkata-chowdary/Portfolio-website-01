@@ -17,63 +17,26 @@ export function SkillsSecion() {
 
 
 export const skills = [
-    // {
-    //     title: "HTML",
-    //     imageUrl: "/logos/html.png"
-    // },
-    // {
-    //     title: "CSS",
-    //     imageUrl: "/logos/css.png"
-    // },
-    {
-        title: "JavaScript",
-        imageUrl: "/logos/js.png"
-    },
-    {
-        title: "ReactJS",
-        imageUrl: "/logos/react.png"
-    },
-    {
-        title: "NodeJs",
-        imageUrl: "/logos/node.png"
-    },
-    {
-        title: "MongoDB",
-        imageUrl: "/logos/mongodb.png"
-    },
-    {
-        title: "ExpressJS",
-        imageUrl: "/logos/express.png"
-    },
-    {
-        title: "Tailwind",
-        imageUrl: "/logos/tailwind.png"
-    }, {
-        title: "Firebase",
-        imageUrl: "/logos/firebase.png"
-    },
-    {
-        title: "NextJS",
-        imageUrl: "/logos/nextjs.png"
-    }, {
-        title: "Appwrite",
-        imageUrl: "/logos/appwrite.png"
-    }, {
-        title: "Prisma",
-        imageUrl: "/logos/prisma.png"
-    },
-    {
-        title: "PostgreSQL",
-        imageUrl: "/logos/postgresql.png"
-    },
-    {
-        title: "Git",
-        imageUrl: "/logos/git.png"
-    },
-    {
-        title: "SQL",
-        imageUrl: "/logos/mysql.png"
-    }
-
+    { title: "React.js", imageUrl: "/logos/react.png" },
+    { title: "LangChain", imageUrl: "/logos/langchain.png" },
+    { title: "CSS", imageUrl: "/logos/css.png" },
+    { title: "Prisma", imageUrl: "/logos/prisma.png" },
+    { title: "Node.js", imageUrl: "/logos/node.png" },
+    { title: "MongoDB", imageUrl: "/logos/mongodb.png" },
+    { title: "PostgreSQL", imageUrl: "/logos/postgresql.png" },
+    { title: "JavaScript", imageUrl: "/logos/js.png" },
+    { title: "Tailwind CSS", imageUrl: "/logos/tailwind.png" },
+    { title: "Redis", imageUrl: "/logos/redis.png" },
+    { title: "Flask", imageUrl: "/logos/flask.png" },
+    { title: "Git", imageUrl: "/logos/git.png" },
+    { title: "HTML5", imageUrl: "/logos/html.png" },
+    { title: "Redux", imageUrl: "/logos/redux.png" },
+    { title: "SQL", imageUrl: "/logos/mysql.png" },
+    { title: "Next.js", imageUrl: "/logos/nextjs.png" },
+    { title: "Express.js", imageUrl: "/logos/express.png" },
+    { title: "Firebase", imageUrl: "/logos/firebase.png" },
+    { title: "MCP Server", imageUrl: "/logos/mcp.png" },
+    { title: "Appwrite", imageUrl: "/logos/appwrite.png" },
+    { title: "Python", imageUrl: "/logos/python.png" }
 ];
 
