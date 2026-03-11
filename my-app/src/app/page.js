@@ -1,4 +1,5 @@
 import { ContactSection } from "@/components/ContactSection";
+import { ActivitySection } from "./components/ActivitySection";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { HeroSection } from "@/components/HeroSection";
 import { ProjectSection } from "@/components/ProjectSection";
@@ -9,9 +10,10 @@ export default function Home() {
   return (
     <div className="bg-black">
       <HeroSection />
-      <SkillsSecion />
       <ExperienceSection />
       <ProjectSection />
+      <SkillsSecion />
+      <ActivitySection />
       <ContactSection />
     </div>
   );

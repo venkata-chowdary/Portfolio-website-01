@@ -108,3 +108,24 @@ body::after {
     }
     
 }
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(360%);
+    }
+}
+
+@keyframes pulseRing {
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.03);
+    }
+}

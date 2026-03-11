@@ -23,7 +23,7 @@ export function FloatingNavBar() {
             icon: (
                 <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "https://www.linkedin.com/in/venkata-chowdary-immanni-95527723a",
+            href: "https://www.linkedin.com/in/venkata-chowdary/",
         },
         {
             title: "Leetcode",

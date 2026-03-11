@@ -1,102 +1,51 @@
-import Image from "next/image";
-import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { Skill } from "./Skill";
 
 export function ExpTimeLine() {
     const data = [
         {
-            title: "July 2023 - August 2023",
+            title: "Apr 2025 - Dec 2025",
             content: (
                 <div className="flex flex-col space-y-2 lg:space-y-3">
                     <div>
                         <h2 className="text-2xl lg:text-4xl font-bold mb-1">
-                            Full Stack Intern
+                            Software Engineer (Founding Engineer, Early Team Member)
                         </h2>
                         <h3 className="text-xs lg:text-base font-medium text-neutral-500">
-                            TopNotch Software Solutions,{" "}
-                            <span>Visakhapatnam</span>
+                            Inagent, <span>Bengaluru, India</span>
                         </h3>
                     </div>
                     <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
                         <li>
-                            Developed a Library Management System using HTML,
-                            CSS, Django, and SQL.
+                            Led end-to-end development of an AI-powered B2B sales automation platform, owning backend systems, AI integrations, and production deployments.
                         </li>
                         <li>
-                            Focused on creating an intuitive user interface and
-                            efficient database interactions for seamless library
-                            operations.
+                            Architected multi-agent workflows using LangChain, LangGraph, and MCP patterns for lead qualification, personalized outreach generation, and follow-up automation.
                         </li>
                         <li>
-                            Enhanced skills in full-stack development and
-                            collaborative problem-solving.
-                        </li>
-                    </ul>
-                    <div className="flex flex-wrap mt-1">
-                        {["HTML", "CSS", "Javascript", "Django", "SQL"].map(
-                            (tech) => (
-                                <Skill key={tech} skill={tech} />
-                            )
-                        )}
-                    </div>
-                </div>
-            ),
-        },
-        {
-            title: "Dec 2024 - Dec 2025",
-            content: (
-                <div className="flex flex-col space-y-2 lg:space-y-3">
-                    <div>
-                        <h2 className="text-2xl lg:text-4xl font-bold mb-1">
-                            Software Engineer
-                        </h2>
-                        <h3 className="text-xs lg:text-base font-medium text-neutral-500">
-                            Inagent, <span>Visakhapatnam</span>
-                        </h3>
-                    </div>
-                    <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
-                        <li>
-                            Core member of the development team, contributing to
-                            technical decisions with the CTO and delivering
-                            full-stack features.
+                            Built FastAPI AI services with Gemini 2.5 Pro (Vertex AI), LinkedIn enrichment pipelines, and background workers for scheduling, CRM sync, and webhook processing.
                         </li>
                         <li>
-                            Helped take the product from inception to its first
-                            5 sales, shaping early adoption and product
-                            strategy.
+                            Improved response efficiency with Redis caching, integrated Gmail/HubSpot/Calendly/CRMs, and deployed containerized services using Docker and Kubernetes (Rancher).
                         </li>
                         <li>
-                            Developed end-to-end full-stack SaaS features using
-                            React.js, Next.js, Node.js, Express.js, and Python
-                            for scalable, reliable solutions.
-                        </li>
-                        <li>
-                            Built and integrated agentic AI and GenAI tools
-                            using LangChain, LangGraph, and MCP servers as part
-                            of the full-stack AI platform.
-                        </li>
-                        <li>
-                            Managed CI/CD pipelines and production deployments
-                            using GitLab CI/CD, Docker, and Rancher.
-                        </li>
-                        <li>
-                            Actively involved in product decisions, engineering
-                            architecture, and delivering rapid iterations in a
-                            fast-paced startup environment.
+                            Used LangSmith to trace and refine agent workflows and collaborated with sales, design, QA, and interns to ship customer-driven features.
                         </li>
                     </ul>
                     <div className="flex flex-wrap mt-1">
                         {[
-                            "React.js",
-                            "Next.js",
-                            "Node.js",
                             "Python",
+                            "FastAPI",
                             "LangChain",
                             "LangGraph",
+                            "MCP",
+                            "Gemini 2.5 Pro",
+                            "Redis",
                             "Docker",
-                            "GitLab CI/CD",
-                            "MCP Servers",
+                            "Kubernetes",
+                            "HubSpot",
+                            "Gmail API",
+                            "LangSmith",
                         ].map((tech) => (
                             <Skill key={tech} skill={tech} />
                         ))}
@@ -105,7 +54,7 @@ export function ExpTimeLine() {
             ),
         },
         {
-            title: "Nov 2024 – Dec 2024",
+            title: "Nov 2024 - Apr 2025",
             content: (
                 <div className="flex flex-col space-y-2 lg:space-y-3">
                     <div>
@@ -113,42 +62,41 @@ export function ExpTimeLine() {
                             Software Developer Intern
                         </h2>
                         <h3 className="text-xs lg:text-base font-medium text-neutral-500">
-                            Inagent, <span>Visakhapatnam</span>
+                            Inagent, <span>Visakhapatnam, India</span>
                         </h3>
                     </div>
                     <ul className="list-disc leading-loose ml-5 text-sm lg:text-base text-gray-300 space-y-2">
                         <li>
-                            Worked closely with the CTO to build the
-                            foundational architecture of a modern SaaS platform
-                            from scratch.
+                            Contributed to foundational SaaS architecture using React.js, Node.js, Express.js, and MongoDB, delivering core product features.
                         </li>
                         <li>
-                            Developed full-stack features using React.js,
-                            Node.js, and MongoDB, ensuring seamless integration
-                            and robust performance.
+                            Integrated REST APIs to establish reliable frontend-backend communication and maintain modular system design.
                         </li>
                         <li>
-                            Integrated and consumed RESTful APIs to enable
-                            smooth data flow across frontend and backend
-                            services.
+                            Experimented with early LLM integrations and agent workflows using Flowise while building platform features.
                         </li>
                         <li>
-                            Collaborated with the UI/UX team to build intuitive,
-                            user-friendly interfaces and deliver polished
-                            product experience.
+                            Prototyped automation flows and prompt-based classification for lead analysis and email drafting in collaboration with the CTO.
                         </li>
                     </ul>
                     <div className="flex flex-wrap mt-1">
-                        {["ReactJS", "NodeJs", "MongoDB", "RESTful APIs"].map(
-                            (tech) => (
-                                <Skill key={tech} skill={tech} />
-                            )
-                        )}
+                        {[
+                            "React.js",
+                            "Node.js",
+                            "Express.js",
+                            "MongoDB",
+                            "REST APIs",
+                            "Flowise",
+                            "Prompt Engineering",
+                        ].map((tech) => (
+                            <Skill key={tech} skill={tech} />
+                        ))}
                     </div>
                 </div>
             ),
         },
     ];
+
     return (
         <div className="w-full">
             <Timeline data={data} />
