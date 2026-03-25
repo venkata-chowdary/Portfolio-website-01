@@ -10,8 +10,8 @@ import { IconBrandGithub, IconLink } from "@tabler/icons-react";
 export function ProjectCard({ project }) {
 
     return (
-        (<CardContainer className="inter-var">
-            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+        (<CardContainer className="inter-var h-full" containerClassName="h-full">
+            <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl p-6 border flex flex-col">
                 <CardItem translateZ="100" className="lg:w-full">
                     <Image
                         src={project.image}
@@ -27,7 +27,7 @@ export function ProjectCard({ project }) {
                     {project.title}
                 </CardItem>
 
-                <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm lg:mt-2 mt-1 dark:text-neutral-400 ">
+                <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm w-full lg:mt-2 mt-1 dark:text-neutral-400 ">
                     {project.description}
                 </CardItem>
                 <CardItem className="flex flex-row flex-wrap lg:mt-4 mt-3" translateZ="60">
@@ -35,7 +35,7 @@ export function ProjectCard({ project }) {
                         return <Skill key={ind} skill={skill} />
                     })}
                 </CardItem>
-                <CardItem translateZ="50" className="flex justify-start items-center gap-4 w-full lg:mt-4 mt-3">
+                <CardItem translateZ="50" className="flex justify-start items-center gap-4 w-full mt-auto pt-4">
                     <Link href={project.liveLink} target="_blank" className="flex items-center text-blue-500 hover:text-blue-700 transition-colors duration-300">
                         <IconLink
                             size={24}

@@ -2,11 +2,11 @@ import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
     IconBrandGithub,
-    IconBrandX,
     IconHome,
     IconBrandLinkedin,
     IconMail,
     IconBrandLeetcode,
+    IconFileText,
 } from "@tabler/icons-react";
 
 export function FloatingNavBar() {
@@ -38,11 +38,11 @@ export function FloatingNavBar() {
             href: "https://github.com/venkata-chowdary/",
         },
         {
-            title: "Twitter",
+            title: "Resume",
             icon: (
-                <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconFileText className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "https://x.com/venkat2k4",
+            href: "https://docs.google.com/document/d/1A74_5UpTd2cvaPVd-Ogh6ZY0QKjpEtOcWfIYhArsiCU/edit?usp=sharing",
         },
         {
             title: "Contact",
