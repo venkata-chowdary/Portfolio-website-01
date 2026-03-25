@@ -38,7 +38,9 @@ export async function GET() {
         const payload = await response.json();
         const today = payload?.data?.[0];
         const totalSeconds = today?.grand_total?.total_seconds || 0;
-        const total = today?.grand_total?.text || "0 mins";
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const total = hours > 0 ? `${hours} hrs ${minutes} mins` : `${minutes} mins`;
         const languages = Array.isArray(today?.languages) ? today.languages : [];
 
         const topLanguages = languages

@@ -1,5 +1,5 @@
 const HEARTBEAT_URL =
-  process.env.HEARTBEAT_URL || "https://myportfolio.com/api/heartbeat";
+  process.env.HEARTBEAT_URL || "https://ivnc.vercel.app/api/heartbeat";
 
 async function sendHeartbeat() {
   try {
